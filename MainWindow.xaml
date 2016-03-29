@@ -1,0 +1,51 @@
+﻿<Window x:Class="Player.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="My Player" Height="275" Width="478" Closed="Window_Closed" Icon="image/1457493294_vlc.png" Topmost="True" ResizeMode="CanMinimize" Drop="Window_Drop" AllowDrop="True">
+	<Grid>
+		<Button x:Name="btnAddMedia" HorizontalAlignment="Left" Margin="12,57,0,0" VerticalAlignment="Top" Width="75" Height="96" Click="btnAddMedia_Click" IsDefault="True">
+			<StackPanel>
+				<Image Source="image/1457493289_document-open.png" />
+				<TextBlock HorizontalAlignment="Center">Abrir...</TextBlock>
+			</StackPanel>
+		</Button>
+		<Button x:Name="btnPlay" HorizontalAlignment="Left" Margin="134,56,0,0" VerticalAlignment="Top" Width="75" Height="96" Click="btnPlay_Click" IsEnabled="{Binding IsVideoPronto}">
+			<StackPanel>
+				<Image Source="image/1457492894_gtk-media-play-ltr.png" />
+				<TextBlock HorizontalAlignment="Center">Play</TextBlock>
+			</StackPanel>
+		</Button>
+		<Button x:Name="btnPause" HorizontalAlignment="Left" Margin="224,56,0,0" VerticalAlignment="Top" Width="75" Height="96" Click="btnPause_Click" IsEnabled="{Binding Path=IsVideoPronto}">
+			<StackPanel>
+				<Image Source="image/1457492910_gtk-media-pause.png" />
+				<TextBlock HorizontalAlignment="Center">Pause</TextBlock>
+			</StackPanel>
+		</Button>
+		<Button x:Name="btnStop" HorizontalAlignment="Left" Margin="314,56,0,0" VerticalAlignment="Top" Width="75" Height="96" Click="btnStop_Click" IsEnabled="{Binding Path=IsVideoPronto}">
+			<StackPanel>
+				<Image Source="image/1457492906_gtk-media-stop.png" OpacityMask="#FF7A2222" />
+				<TextBlock HorizontalAlignment="Center">Stop</TextBlock>
+			</StackPanel>
+		</Button>
+
+		<Slider x:Name="sliderVolume" HorizontalAlignment="Left" Margin="417,57,0,0" VerticalAlignment="Top" Width="25" Maximum="100" TickFrequency="1" Value="50" Orientation="Vertical" Height="69" TickPlacement="TopLeft" ToolTip="Volume"
+				Thumb.DragCompleted="sliderVolume_DragCompleted" />
+		<Separator HorizontalAlignment="Left" Height="25" Margin="99,55,0,0" VerticalAlignment="Top" Width="100">
+			<Separator.LayoutTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="90"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Separator.LayoutTransform>
+		</Separator>
+		<Label Content="Volume" HorizontalAlignment="Left" Margin="404,126,0,0" VerticalAlignment="Top" Height="23"/>
+		<Label x:Name="lblArquivo" Content="" Margin="10,17,10,0" VerticalAlignment="Top"/>
+		<Slider x:Name="sliderTempo" Margin="10,199,10,0" BorderThickness="0" UseLayoutRounding="True" RenderTransformOrigin="0.5,0.5" Thumb.DragStarted="sliderTempo_DragStarted" Thumb.DragCompleted="sliderTempo_DragCompleted" Height="23" VerticalAlignment="Top">
+
+		</Slider>
+		<Label x:Name="tempoVideo" Content="" HorizontalAlignment="Left" Margin="12,169,0,0" VerticalAlignment="Top"/>
+
+	</Grid>
+</Window>
