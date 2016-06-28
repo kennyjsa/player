@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Player.exe" version="1.0.0.2" publicKeyToken="1604370d4409740c" language="pt-BR" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="image\1457568115_vlc.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Player" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Player.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Player.exe" size="246720">
+      <assemblyIdentity name="Player" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Zpo882z6yJr2UU7jlwm5eeLtKTBSAjGuoGWoMjxnXmk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="image\1457568115_vlc.ico" size="99678">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RPN7+0MJI2OlAgRforZPa33xhDtDkwtHQq9Br8GIA9g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Player.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=TECNOREDE\kenny" issuerKeyHash="92fae88421e4dc55c5cea3f6bc7810361a670cff" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>cM4JnZzb4zK5ozjuSAPJFY+ZkhNzZk6pFULQ8/myh2E=</DigestValue></Reference></SignedInfo><SignatureValue>LujDK3/YeW0j1IkF3ihMxr8zq+PX59xHVDnFub6eERQCxqSV94Km1K2pi9cSeb5IIN0iFeTwR94cKhAh9WlYOpVFgtInJEhy2g2Htwr6kIEDZVCVohjy9Z7YatxQX4FrCzipIYTuD2fu1yY4D0tU8xUGHJiWvPQEf0ND2GlJJqY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rgyxoYFauspQ5UQUaW4f7tuhI0L4Okk0onbL714urgn6zYSsvEcNYmd4jQYIO9aYIZUiUOwm2Um8ohuvTMjV2ZxyM6Usi0kbpeQU//DWTCQXQ5MaZexav2TE+ylskw7MqZ+BKCiHYeeM3xwBWvdKwA0rx/xVIl/9OTdpyCVKikE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="6187b2f9f3d04215a94e66731392998f15c90348ee38a3b932e3db9c9d09ce70" Description="" Url=""><as:assemblyIdentity name="Player.exe" version="1.0.0.2" publicKeyToken="1604370d4409740c" language="pt-BR" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=TECNOREDE\kenny</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>bqAeE2EmWO9D5jT7Pow4Q31kmIvO5NhKYvWAgiJDRkA=</DigestValue></Reference></SignedInfo><SignatureValue>XU2l2KzLJN0wn+SeaZzWMJp/hYqsR913P1kbCEYTZu2tSTySZwkwToe3Nq5LhgPTN5drvg0XgROfAi2DZnoYuyX7brP4Nxa3D/f0BAEK8bsKzOFe+Ev0e3lWPRMUD0BqN3dD/HDgGNRMTmPGQxv+tRT0MWkTR2Y4xlyjn2VO7Mc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rgyxoYFauspQ5UQUaW4f7tuhI0L4Okk0onbL714urgn6zYSsvEcNYmd4jQYIO9aYIZUiUOwm2Um8ohuvTMjV2ZxyM6Usi0kbpeQU//DWTCQXQ5MaZexav2TE+ylskw7MqZ+BKCiHYeeM3xwBWvdKwA0rx/xVIl/9OTdpyCVKikE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQHgPjoAR4QIBDOWlw8Zxq/DANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4AVABFAEMATgBPAFIARQBEAEUAXABrAGUAbgBuAHkwHhcNMTYwMzA5MTc1ODQzWhcNMTcwMzA5MjM1ODQzWjApMScwJQYDVQQDHh4AVABFAEMATgBPAFIARQBEAEUAXABrAGUAbgBuAHkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAK4MsaGBWrrKUOVEFGluH+7boSNC+DpJNKJ2y+9eLq4J+s2ErLxHDWJneI0GCDvWmCGVIlDsJtlJvKIbr0zI1dmccjOlLItJG6XkFP/w1kwkF0OTGmXsWr9kxPspbJMOzKmfgSgoh2HnjN8cAVr3SsANK8f8VSJf/Tk3acglSopBAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAJ6LixQusgqtbQyf1j1lxigAaNwWPpT0VBlb4blEf+3xgRMi37qlpnR4EWNmA1D5aWtdba2IhxtHd/e8y+2AFY8DFIi/RqBzB6N+MvWow4POZl+0/3We7msUyOoxAsY/0mLvxUwMu/HSz4nOeqZ+19LdwDNWEnb06g5FVZzfsYik=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
